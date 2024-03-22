@@ -67,6 +67,7 @@ pub struct LiteSVM {
     latest_blockhash: Hash,
     log_collector: Rc<RefCell<LogCollector>>,
     history: TransactionHistory,
+    programs_updated_only_for_global_cache: LoadedProgramsForTxBatch,
 }
 
 impl Default for LiteSVM {
@@ -81,6 +82,7 @@ impl Default for LiteSVM {
             latest_blockhash: create_blockhash(b"genesis"),
             log_collector: Default::default(),
             history: TransactionHistory::new(),
+            programs_updated_only_for_global_cache: LoadedProgramsForTxBatch::default(),
         }
     }
 }
@@ -313,7 +315,6 @@ impl LiteSVM {
             self.slot,
             self.accounts.programs_cache.environments.clone(),
         );
-        let mut programs_updated_only_for_global_cache = LoadedProgramsForTxBatch::default();
         let mut accumulated_consume_units = 0;
 
         let program_indices = tx
@@ -331,7 +332,7 @@ impl LiteSVM {
             Some(self.log_collector.clone()),
             &self.accounts.programs_cache,
             &mut programs_modified_by_tx,
-            &mut programs_updated_only_for_global_cache,
+            &mut self.programs_updated_only_for_global_cache,
             self.feature_set.clone(),
             compute_budget,
             &mut ExecuteTimings::default(),
