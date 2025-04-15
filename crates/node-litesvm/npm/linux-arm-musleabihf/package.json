@@ -1,5 +1,5 @@
 {
-  "name": "litesvm-linux-arm-musleabihf",
+  "name": "litesvm-with-snapshot-linux-arm-musleabihf",
   "version": "0.0.0",
   "os": [
     "linux"

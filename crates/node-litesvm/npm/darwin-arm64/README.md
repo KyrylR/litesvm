@@ -1,3 +1,3 @@
-# `litesvm-darwin-arm64`
+# `litesvm-with-snapshot-darwin-arm64`
 
 This is the **aarch64-apple-darwin** binary for `litesvm`

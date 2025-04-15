@@ -1,5 +1,5 @@
 {
-  "name": "litesvm-freebsd-x64",
+  "name": "litesvm-with-snapshot-freebsd-x64",
   "version": "0.0.0",
   "os": [
     "freebsd"

@@ -1,3 +1,3 @@
-# `litesvm-darwin-universal`
+# `litesvm-with-snapshot-darwin-universal`
 
 This is the **universal-apple-darwin** binary for `litesvm`

@@ -1,5 +1,5 @@
 {
-  "name": "litesvm-linux-arm64-musl",
+  "name": "litesvm-with-snapshot-linux-arm64-musl",
   "version": "0.0.0",
   "os": [
     "linux"

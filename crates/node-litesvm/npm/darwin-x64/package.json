@@ -1,5 +1,5 @@
 {
-  "name": "litesvm-darwin-x64",
+  "name": "litesvm-with-snapshot-darwin-x64",
   "version": "0.3.1",
   "os": [
     "darwin"

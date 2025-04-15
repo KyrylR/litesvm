@@ -1,5 +1,5 @@
 {
-  "name": "litesvm-win32-ia32-msvc",
+  "name": "litesvm-with-snapshot-win32-ia32-msvc",
   "version": "0.0.0",
   "os": [
     "win32"
