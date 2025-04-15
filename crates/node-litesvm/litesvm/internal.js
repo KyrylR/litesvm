@@ -37,7 +37,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.android-arm64.node')
           } else {
-            nativeBinding = require('litesvm-android-arm64')
+            nativeBinding = require('litesvm-with-snapshot-android-arm64')
           }
         } catch (e) {
           loadError = e
@@ -49,7 +49,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.android-arm-eabi.node')
           } else {
-            nativeBinding = require('litesvm-android-arm-eabi')
+            nativeBinding = require('litesvm-with-snapshot-android-arm-eabi')
           }
         } catch (e) {
           loadError = e
@@ -69,7 +69,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.win32-x64-msvc.node')
           } else {
-            nativeBinding = require('litesvm-win32-x64-msvc')
+            nativeBinding = require('litesvm-with-snapshot-win32-x64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -83,7 +83,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.win32-ia32-msvc.node')
           } else {
-            nativeBinding = require('litesvm-win32-ia32-msvc')
+            nativeBinding = require('litesvm-with-snapshot-win32-ia32-msvc')
           }
         } catch (e) {
           loadError = e
@@ -97,7 +97,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.win32-arm64-msvc.node')
           } else {
-            nativeBinding = require('litesvm-win32-arm64-msvc')
+            nativeBinding = require('litesvm-with-snapshot-win32-arm64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -113,7 +113,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./litesvm.darwin-universal.node')
       } else {
-        nativeBinding = require('litesvm-darwin-universal')
+        nativeBinding = require('litesvm-with-snapshot-darwin-universal')
       }
       break
     } catch {}
@@ -124,7 +124,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.darwin-x64.node')
           } else {
-            nativeBinding = require('litesvm-darwin-x64')
+            nativeBinding = require('litesvm-with-snapshot-darwin-x64')
           }
         } catch (e) {
           loadError = e
@@ -138,7 +138,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.darwin-arm64.node')
           } else {
-            nativeBinding = require('litesvm-darwin-arm64')
+            nativeBinding = require('litesvm-with-snapshot-darwin-arm64')
           }
         } catch (e) {
           loadError = e
@@ -157,7 +157,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./litesvm.freebsd-x64.node')
       } else {
-        nativeBinding = require('litesvm-freebsd-x64')
+        nativeBinding = require('litesvm-with-snapshot-freebsd-x64')
       }
     } catch (e) {
       loadError = e
@@ -174,7 +174,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-x64-musl.node')
             } else {
-              nativeBinding = require('litesvm-linux-x64-musl')
+              nativeBinding = require('litesvm-with-snapshot-linux-x64-musl')
             }
           } catch (e) {
             loadError = e
@@ -187,7 +187,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-x64-gnu.node')
             } else {
-              nativeBinding = require('litesvm-linux-x64-gnu')
+              nativeBinding = require('litesvm-with-snapshot-linux-x64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -203,7 +203,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-arm64-musl.node')
             } else {
-              nativeBinding = require('litesvm-linux-arm64-musl')
+              nativeBinding = require('litesvm-with-snapshot-linux-arm64-musl')
             }
           } catch (e) {
             loadError = e
@@ -216,7 +216,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-arm64-gnu.node')
             } else {
-              nativeBinding = require('litesvm-linux-arm64-gnu')
+              nativeBinding = require('litesvm-with-snapshot-linux-arm64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -232,7 +232,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-arm-musleabihf.node')
             } else {
-              nativeBinding = require('litesvm-linux-arm-musleabihf')
+              nativeBinding = require('litesvm-with-snapshot-linux-arm-musleabihf')
             }
           } catch (e) {
             loadError = e
@@ -245,7 +245,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-arm-gnueabihf.node')
             } else {
-              nativeBinding = require('litesvm-linux-arm-gnueabihf')
+              nativeBinding = require('litesvm-with-snapshot-linux-arm-gnueabihf')
             }
           } catch (e) {
             loadError = e
@@ -261,7 +261,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-riscv64-musl.node')
             } else {
-              nativeBinding = require('litesvm-linux-riscv64-musl')
+              nativeBinding = require('litesvm-with-snapshot-linux-riscv64-musl')
             }
           } catch (e) {
             loadError = e
@@ -274,7 +274,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./litesvm.linux-riscv64-gnu.node')
             } else {
-              nativeBinding = require('litesvm-linux-riscv64-gnu')
+              nativeBinding = require('litesvm-with-snapshot-linux-riscv64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -289,7 +289,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./litesvm.linux-s390x-gnu.node')
           } else {
-            nativeBinding = require('litesvm-linux-s390x-gnu')
+            nativeBinding = require('litesvm-with-snapshot-linux-s390x-gnu')
           }
         } catch (e) {
           loadError = e
