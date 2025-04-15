@@ -12,6 +12,8 @@ on:
       - '**/*.gitignore'
       - .editorconfig
       - crates/node-litesvm/docs/**
+    tags:
+      - "v*.*.*"
   pull_request:
     branches: [master]
     paths-ignore:

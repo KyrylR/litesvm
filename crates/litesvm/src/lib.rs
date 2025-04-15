@@ -1354,7 +1354,7 @@ impl LiteSVM {
     #[cfg_attr(feature = "nodejs-internal", qualifiers(pub))]
     pub fn revert(&mut self) {
         let Some(snapshot) = self.snapshot.clone() else {
-          return;
+            return;
         };
 
         self.accounts = snapshot.accounts;

@@ -389,7 +389,7 @@ impl LiteSvm {
     }
 
     #[napi]
-    pub fn snapshot(&mut self)  {
+    pub fn snapshot(&mut self) {
         self.0.snapshot();
     }
 
